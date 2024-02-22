@@ -1,0 +1,10 @@
+// OPCODE                     VALUE               COMMENT
+// RAX                        0x100
+// 0x104                      0xAB
+// $0x108                     0x108
+// (%rax)                     0xFF                0x100
+// 4 + (%rax) rax value       0xAB                 4 + rax.value                 
+// 9 + 0x100 + 0x1            0x11 || 0x10c
+// 260 + rcx + rdx            0x13
+// 0xFC + RCX + $             0xFF
+// RAX.val + RDX.val * 4      0x11

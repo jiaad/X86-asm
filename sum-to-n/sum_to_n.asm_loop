@@ -1,0 +1,13 @@
+              global          sum_to_n
+              section         .text
+
+sum_to_n:
+              xor             rax, rax ; zero mov rax, 0 
+         ;     cmp             rdi, 0     ; RDI is the first parameter
+         ;     jg              loop
+_loop: ; this is do while loop, we are not checking the condition at the begining
+              add             rax, rdi
+              dec             rdi
+           ;   cmp             rdi, 0
+              jg              _loop
+              ret

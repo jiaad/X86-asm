@@ -1,0 +1,10 @@
+            global             sum_to_n
+
+            section           .text
+
+sum_to_n:
+            add               rdi, 1
+            mov               rax, rdi
+            imul              rax, rdi
+            shr               rax, 1
+            ret
